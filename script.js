@@ -100,7 +100,13 @@ drawerBtns.forEach(btn => {
         const character = characters[Math.floor(Math.random() * characters.length)];
         selectedCharacter = character;
         shuffledStatements = shuffleArray(character.statements);
-        showCharacter();
+
+        // Trigger opening animation and then show the character
+        btn.classList.add('open');
+        setTimeout(() => {
+            showCharacter();
+            btn.classList.remove('open');
+        }, 400);
     });
 });
 
