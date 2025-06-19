@@ -41,10 +41,11 @@ main {
 }
 
 #drawer-grid {
-    margin: 40px 0 20px 0;
+    margin: 40px auto 20px auto;
     display: grid;
-    grid-template-columns: repeat(3, 155px);
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
     grid-gap: 28px;
+    max-width: 900px;
     justify-content: center;
 }
 
