@@ -21,16 +21,6 @@ const characters = [
         ]
     }
 
-     {
-        name: "",
-        statements: [
-            { text: "Była ostatnią królową starożytnego Egiptu.", isTrue: true },
-            { text: "Przyjaźniła się z Julią Cezarową.", isTrue: false },
-            { text: "Była znana z wielkiej urody.", isTrue: true },
-            { text: "Odkryła Amerykę.", isTrue: false },
-            { text: "Mieszkała w XIX wieku.", isTrue: false }
-        ]
-    }
 ];
 
 // DOM elements
