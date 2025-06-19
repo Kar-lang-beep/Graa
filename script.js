@@ -19,6 +19,56 @@ const characters = [
             { text: "Odkryła Amerykę.", isTrue: false },
             { text: "Mieszkała w XIX wieku.", isTrue: false }
         ]
+    },
+    {
+        name: "Mikołaj Kopernik",
+        statements: [
+            { text: "Sformułował teorię heliocentryczną.", isTrue: true },
+            { text: "Był średniowiecznym mnisiem z Japonii.", isTrue: false },
+            { text: "Studiował w Krakowie.", isTrue: true },
+            { text: "Urodził się w Toruniu.", isTrue: true },
+            { text: "Publikował w XV wieku w języku francuskim.", isTrue: false }
+        ]
+    },
+    {
+        name: "Maria Skłodowska-Curie",
+        statements: [
+            { text: "Dwukrotna laureatka Nagrody Nobla.", isTrue: true },
+            { text: "Odkryła polon i rad.", isTrue: true },
+            { text: "Była księżniczką francuską.", isTrue: false },
+            { text: "Zginęła w wypadku samochodowym.", isTrue: false },
+            { text: "Prowadziła badania nad promieniotwórczością.", isTrue: true }
+        ]
+    },
+    {
+        name: "Leonardo da Vinci",
+        statements: [
+            { text: "Był renesansowym artystą i wynalazcą.", isTrue: true },
+            { text: "Namalał Mona Lisę.", isTrue: true },
+            { text: "Zaprojektował pierwszą drukarkę 3D.", isTrue: false },
+            { text: "Pochodził z Włoch.", isTrue: true },
+            { text: "Uczestniczył w powstaniu listopadowym.", isTrue: false }
+        ]
+    },
+    {
+        name: "Albert Einstein",
+        statements: [
+            { text: "Opracował teorię względności.", isTrue: true },
+            { text: "Zdobył Nagrodę Nobla w dziedzinie fizyki.", isTrue: true },
+            { text: "Był wybitnym kompozytorem muzyki klasycznej.", isTrue: false },
+            { text: "Zmarł w XX wieku.", isTrue: true },
+            { text: "Odkrył penicylinę.", isTrue: false }
+        ]
+    },
+    {
+        name: "Napoleon Bonaparte",
+        statements: [
+            { text: "Był cesarzem Francuzów.", isTrue: true },
+            { text: "Został pokonany pod Waterloo.", isTrue: true },
+            { text: "Pochodził z Grecji.", isTrue: false },
+            { text: "Został zesłany na Wyspę Świętej Heleny.", isTrue: true },
+            { text: "Kierował budową Wielkiego Muru Chińskiego.", isTrue: false }
+        ]
     }
 ];
 
