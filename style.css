@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffd600;
+    font-family: 'Share Tech Mono', 'Consolas', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background: #111;
+    border-bottom: 2px solid #ffd600;
+    padding: 34px 10px 24px 10px;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    margin: 0 0 12px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2.2em;
+    color: #ffd600;
+    text-shadow: 2px 2px 0 #000, 0 0 16px #000a;
+}
+
+header p {
+    color: #ffe775;
+    font-size: 1.13em;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#drawer-grid {
+    margin: 40px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 155px);
+    grid-gap: 28px;
+    justify-content: center;
+}
+
+.drawer-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.13s;
+    padding: 0;
+    outline: none;
+}
+
+.drawer-btn img {
+    width: 155px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 2px solid #ffd60070;
+    box-shadow: 0 2px 15px #000b;
+    transition: box-shadow 0.2s, border 0.2s, transform 0.13s;
+}
+
+.drawer-btn:hover img, .drawer-btn:focus img {
+    box-shadow: 0 4px 32px #ffd600bb;
+    border: 2.5px solid #ffd600;
+    transform: scale(1.07);
+}
+
+#game-area {
+    max-width: 500px;
+    background: #242424f0;
+    border-radius: 13px;
+    box-shadow: 0 0 24px #ffd60033;
+    border: 2px solid #ffd60090;
+    padding: 35px 24px 28px 24px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff8b4;
+    animation: fadeIn 0.6s;
+}
+
+#game-area.hidden {
+    display: none;
+}
+
+#drawer-grid.hidden {
+    display: none;
+}
+
+#character-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 26px;
+    color: #ffd600;
+    letter-spacing: 1.2px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-shadow: 1px 2px 0 #000;
+}
+
+#statements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px 0;
+}
+
+#statements-list li {
+    font-size: 1.15em;
+    margin: 15px 0;
+    background: #222b;
+    border-radius: 8px;
+    padding: 14px 14px 11px 14px;
+    color: #fffde5;
+    letter-spacing: 0.7px;
+    border-left: 6px solid #ffd600;
+    text-align: left;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px #0008;
+}
+
+#statements-list li span.result {
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 16px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.result.true {
+    color: #5cff54;
+    text-shadow: 0 1px 5px #2b2;
+}
+.result.false {
+    color: #ff7575;
+    text-shadow: 0 1px 5px #a00a;
+}
+
+#show-answers-btn, #back-btn {
+    margin: 12px 8px 0 8px;
+    padding: 11px 30px;
+    font-size: 1.15em;
+    border: none;
+    border-radius: 8px;
+    background: #ffd600;
+    color: #121212;
+    font-weight: bold;
+    font-family: inherit;
+    box-shadow: 0 2px 8px #2229;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+    transition: background 0.15s, color 0.13s;
+}
+#show-answers-btn:hover, #back-btn:hover {
+    background: #fff03e;
+    color: #000;
+}
+#show-answers-btn:disabled {
+    background: #aaa456;
+    color: #333;
+    cursor: not-allowed;
+}
+
+footer {
+    background: #111;
+    color: #ffd600;
+    text-align: center;
+    font-size: 1em;
+    padding: 18px 8px 14px 8px;
+    letter-spacing: 1px;
+    border-top: 2px solid #ffd600;
+    font-family: 'Share Tech Mono', 'Consolas', monospace;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+/* Responsywność */
+@media (max-width: 700px) {
+    #drawer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 17px;
+    }
+    #game-area {
+        padding: 10px;
+        max-width: 99vw;
+    }
+    #statements-list li {
+        font-size: 1em;
+        padding: 10px 8px 8px 11px;
+    }
+    header h1 {
+        font-size: 1.1em;
+    }
+}
